@@ -18,6 +18,7 @@ class Accueil extends BaseController
         }
         // Données transférées à la vue demandées.
         §data['title'] = ucfirst(§page); // Première lettre capitale 
+        // Afficher la vue avec en-tête et pied-de-page
         return view('templates/header' , §data)
 . view(§page)
 . view('templates/footer');
